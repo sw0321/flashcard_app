@@ -17,20 +17,20 @@
 
 ## プロジェクト構造
 
-flashcard-app/
-├── public/
-│ ├── index.html
-│ └── ...
-├── src/
-│ ├── components/
-│ │ ├── Flashcard.js
-│ │ └── FlashcardList.js
-│ ├── App.js
-│ ├── index.js
-│ └── index.css
-├── .env
-├── package.json
-└── README.md
+flashcard-app/  
+├── public/  
+│ ├── index.html  
+│ └── ...  
+├── src/  
+│ ├── components/  
+│ │ ├── Flashcard.js  
+│ │ └── FlashcardList.js  
+│ ├── App.js  
+│ ├── index.js  
+│ └── index.css  
+├── .env  
+├── package.json  
+└── README.md  
 
 ## インストールと設定
 
@@ -84,3 +84,9 @@ npm start
 ### `styles.css`
 
 - 目に優しい配色とレスポンシブデザインを含むスタイルシートです。
+
+## ライセンス
+
+copyright (c) 2024 sw0321
+このプロジェクトはMITライセンスの下で公開されています
+
