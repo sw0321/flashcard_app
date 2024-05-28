@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
+  background-color: #e0f7fa; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,38 +9,38 @@ body {
 }
 
 .App {
-  background: #F5FFFA; /* ミントクリーム背景色 */
-  padding: 20px;
+  background: #e3f2fd;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 1000px;
   text-align: center;
 }
 
 h1 {
-  font-size: 24px;
-  color: #333;
+  font-size: 32px;
+  color: #0277bd; 
 }
 
 textarea {
   width: 100%;
-  height: 100px;
+  height: 150px;
   margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 15px;
+  border: 1px solid #81d4fa;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 18px;
   box-sizing: border-box;
-  background-color: #F0FFF0; /* ハニーデュウ背景色 */
+  background-color: #b3e5fc; 
 }
 
 button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 15px 30px;
+  font-size: 18px;
   color: #fff;
-  background-color: #6B8E23; /* オリーブドラブ色 */
+  background-color: #0288d1; 
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -48,24 +48,41 @@ button {
 }
 
 button:hover {
-  background-color: #556B2F; /* ダークオリーブグリーン色 */
+  background-color: #0277bd; 
 }
 
-.flashcard-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
-.flashcard {
-  background: #E6E6FA; /* ラベンダー色 */
-  border: 1px solid #ddd;
+.card-container button {
+  margin: 0 20px;
+  font-size: 30px;
   padding: 20px;
+  border-radius: 4px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.flashcard {
+  background: #e1f5fe; 
+  border: 1px solid #81d4fa;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 90%;
 }
 
 .flashcard:hover {
@@ -74,13 +91,13 @@ button:hover {
 }
 
 .flashcard .word {
-  font-size: 20px;
+  font-size: 36px;
   font-weight: bold;
-  color: #333;
+  color: #0277bd; 
 }
 
 .flashcard .translation {
-  font-size: 18px;
-  color: #666;
+  font-size: 28px;
+  color: #0288d1;
   margin-top: 10px;
 }

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-const Flashcard = ({ word, translation }) => {
+const Flashcard = ({ flashcard }) => {
   const [showTranslation, setShowTranslation] = useState(false);
 
   return (
     <div className="flashcard" onClick={() => setShowTranslation(!showTranslation)}>
-      <div className="word">{word}</div>
-      {showTranslation && <div className="translation">{translation}</div>}
+      <div className="word">{flashcard.word}</div>
+      {showTranslation && <div className="translation">{flashcard.translation}</div>}
     </div>
   );
-}
+};
 
 export default Flashcard;
